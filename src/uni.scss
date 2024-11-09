@@ -1,0 +1,277 @@
+/** flex 布局*/
+.flex {
+    display: flex;
+  }
+  
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  
+  $flex-space: (
+    1:1,
+    2:2,
+    3:3,
+    4:4
+  );
+  /**
+  flex-1:1;flex-2:2;flex-3:3;flex-4:4
+  */
+  
+  @each $spaceKey,
+  $spaceVal in $flex-space {
+    .flex-#{$spaceKey} {
+      flex: $spaceVal
+    }
+  }
+  
+  ;
+
+$flex-jc: (
+  start:flex-start,
+  end:flex-end,
+  center:center,
+  between:space-between,
+  around:space-around
+);
+/**
+.jc-start {
+    justify-content:flex-start;
+}
+*/
+
+@each $jcKey,
+$jcVal in $flex-jc {
+  .jc-#{$jcKey} {
+    justify-content: $jcVal;
+  }
+}
+
+;
+$flex-ai: (
+  start:flex-start,
+  end:flex-end,
+  center:center,
+  stretch:stretch,
+);
+/**
+.ai-start {
+  align-items: flex-start;
+}
+*/
+
+@each $aiKey,
+$aiVal in $flex-ai {
+  .ai-#{$aiKey} {
+    align-items: $aiVal;
+  }
+};
+
+/** 文字-字体大小*/
+
+$txt-size: (
+  12:12rpx,
+  14:12rpx,
+  16:16rpx,
+  18:18rpx,
+  20:20rpx,
+  22:22rpx,
+  24:24rpx,
+  26:26rpx,
+  28:28rpx,
+  30:30rpx,
+  32:32rpx,
+  34:32rpx,
+  36:36rpx,
+  38:38rpx,
+  40:40rpx,
+  42:42rpx,
+  44:44rpx,
+  46:46rpx,
+  48:48rpx,
+  52:52rpx,
+  54:54rpx,
+  56:56rpx
+);
+
+@each $key,
+$size in $txt-size {
+  .txt-#{$key} {
+    font-size: $size;
+  }
+}
+
+;
+$txt-weight: (
+  4:400,
+  5:500,
+  6:600,
+  7:700,
+  8:800,
+  9:900
+);
+
+@each $key,
+$weight in $txt-weight {
+  .txt-w-#{$key} {
+    font-weight: $weight;
+  }
+}
+
+;
+/** 文字-颜色*/
+
+$txt-color: (
+  black-34:rgba(34, 34, 33, 1),
+  black-50:rgba(50, 50, 51, 1),
+  black-100:rgba(100, 101, 102, 1),
+  black-102:rgba(102, 102, 102, 1),
+  black-147:rgba(147, 157, 191, 1),
+  black-151:rgba(151, 152, 153, 1),
+  black-153:rgba(153, 153, 153, 1),
+  black-228:rgba(228, 228, 228, 1),
+  black-204:rgba(204, 204, 204, 1),
+  white-255:rgba(255, 255, 255, 1),
+  blue-1:rgba(1, 122, 254, 1),
+  blue-56:rgba(56, 103, 255, 1),
+  blue-88:rgba(88, 126, 251, 1),
+  blue-88-6:rgba(88, 126, 251, 0.6),
+  orange-253:rgba(253, 101, 65, 1),
+  orange-254:rgba(254, 100, 53, 1),
+  yellow-225:rgba(225, 163, 72, 1),
+  red-233:rgb(233, 78, 60),
+);
+
+@each $key,
+$color in $txt-color {
+  .txt-#{$key} {
+    color: $color;
+  }
+}
+
+/** 边距相关的 */
+
+$space-type: (
+  m:margin,
+  p:padding
+);
+$spaces: (
+  4: 4rpx,
+  6: 6rpx,
+  8: 8rpx,
+  10: 10rpx,
+  12: 12rpx,
+  14: 14rpx,
+  16: 16rpx,
+  18: 18rpx,
+  20: 20rpx,
+  22: 22rpx,
+  24: 24rpx,
+  26: 26rpx,
+  28: 28rpx,
+  30: 30rpx,
+  32: 32rpx,
+  34: 34rpx,
+  36: 36rpx,
+  38: 38rpx,
+  40: 40rpx,
+  42: 42rpx,
+  44: 44rpx,
+  46: 46rpx,
+  48: 48rpx,
+  50: 50rpx,
+  52: 52rpx,
+  54: 54rpx,
+  56: 56rpx,
+  58: 58rpx,
+  60: 60rpx,
+  62: 62rpx,
+  64: 64rpx,
+  66: 66rpx,
+  68: 68rpx,
+  70: 70rpx,
+  72: 72rpx,
+  74: 74rpx,
+  76: 76rpx,
+  78: 78rpx,
+  80: 80rpx,
+  82: 82rpx,
+  84: 84rpx,
+  86: 86rpx,
+  88: 88rpx,
+  90: 90rpx,
+  92: 92rpx,
+  94: 94rpx,
+  96: 96rpx,
+  98: 98rpx
+);
+$position: (
+  t:top,
+  b:bottom,
+  l:left,
+  r:right
+);
+
+@each $tKey,
+$tVal in $space-type {
+
+  @each $sKey,
+  $sVal in $spaces {
+
+    // .m-4 {margin:4rpx} .p-4 {padding:4rpx}
+    .#{$tKey}-#{$sKey} {
+      #{$tVal}: $sVal;
+    }
+
+    ; //.mx-4 {margin-left:4rpx;margin-right:4rpx} .rpx-4 {padding-left:4rpx;padding-right:4rpx}
+
+    .#{$tKey}x-#{$sKey} {
+      #{$tVal}-left: $sVal;
+      #{$tVal}-right: $sVal;
+    }
+
+    ; //.my-4 {margin-top:4rpx;margin-bottom:4rpx} .py-4 {padding-top:4rpx;padding-bottom:4rpx}
+
+    .#{$tKey}y-#{$sKey} {
+      #{$tVal}-top: $sVal;
+      #{$tVal}-bottom: $sVal;
+    }
+
+    ;
+
+    @each $pKey,
+    $pVal in $position {
+
+      // .mt-4 {margin-top:4rpx}
+      .#{$tKey}#{$pKey}-#{$sKey} {
+        #{$tVal}-#{$pVal}: $sVal;
+      }
+    }
+
+    ;
+  }
+};
+
+.txt-ellipsis {
+  width: 400rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

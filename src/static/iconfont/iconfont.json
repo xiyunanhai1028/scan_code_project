@@ -1,0 +1,149 @@
+{
+  "id": "2233467",
+  "name": "扫码点餐",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2777917",
+      "name": "shengchanjiagong",
+      "font_class": "shengchanjiagong",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "1007860",
+      "name": "未标题-17",
+      "font_class": "weibiaoti17",
+      "unicode": "e88a",
+      "unicode_decimal": 59530
+    },
+    {
+      "icon_id": "27885166",
+      "name": "菜品管理",
+      "font_class": "caipinguanli",
+      "unicode": "e7fa",
+      "unicode_decimal": 59386
+    },
+    {
+      "icon_id": "30512636",
+      "name": "flat-user-order",
+      "font_class": "flat-user-order",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "2076282",
+      "name": " 订单",
+      "font_class": "dingdan",
+      "unicode": "e897",
+      "unicode_decimal": 59543
+    },
+    {
+      "icon_id": "11158750",
+      "name": "no_data",
+      "font_class": "no_data",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "15838561",
+      "name": "arrow-left-bold",
+      "font_class": "arrow-left-bold",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "15838566",
+      "name": "arrow-right-bold",
+      "font_class": "arrow-right-bold",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "10147113",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "8019621",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "7193659",
+      "name": "B-评分",
+      "font_class": "B-pingfen",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "19018894",
+      "name": "销量",
+      "font_class": "xiaoliang",
+      "unicode": "e75c",
+      "unicode_decimal": 59228
+    },
+    {
+      "icon_id": "658053",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "667501",
+      "name": "radio button",
+      "font_class": "radiobutton",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "6242438",
+      "name": "radio",
+      "font_class": "radio",
+      "unicode": "e7c9",
+      "unicode_decimal": 59337
+    },
+    {
+      "icon_id": "12392266",
+      "name": "不满意",
+      "font_class": "bumanyi",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "19922658",
+      "name": "满意",
+      "font_class": "manyi",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "4431967",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "11372766",
+      "name": "减少",
+      "font_class": "jianshao",
+      "unicode": "e8c5",
+      "unicode_decimal": 59589
+    },
+    {
+      "icon_id": "11372787",
+      "name": "增加",
+      "font_class": "zengjia",
+      "unicode": "e8c8",
+      "unicode_decimal": 59592
+    }
+  ]
+}

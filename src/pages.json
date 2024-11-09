@@ -1,0 +1,55 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES",
+          "pullRefresh": false
+        }
+      }
+    },
+    {
+      "path": "pages/home/detail",
+      "style": {
+        "navigationBarTitleText": "详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/queue/index",
+      "style": {
+        "navigationBarTitleText": "聚餐排队"
+      }
+    },
+    {
+      "path": "pages/evaluate/index",
+      "style": {
+        "navigationBarTitleText": "评价"
+      }
+    },
+    {
+      "path": "pages/order/index",
+      "style": {
+        "navigationBarTitleText": "订单",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/order/detail",
+      "style": {
+        "navigationBarTitleText": "订单详情"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "扫码点餐",
+    "navigationBarBackgroundColor": "#cccccc",
+    "backgroundColor": "#F8F8F8"
+  }
+}
